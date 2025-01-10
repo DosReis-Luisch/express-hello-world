@@ -7,7 +7,7 @@ app.get("/", (req, res) => res.type('html').send(html));
 // Add a new route for the health endpoint 
 
 app.get("/health", (req, res) => {
-  console.log('this should work');
+  console.log('app is healthy');
   res.sendStatus(200);
 }); 
 
