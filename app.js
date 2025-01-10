@@ -7,8 +7,8 @@ app.get("/", (req, res) => res.type('html').send(html));
 // Add a new route for the health endpoint 
 
 app.get("/health", (req, res) => {
-  res.sendStatus(200); 
-
+  console.log('this should work');
+  res.sendStatus(200);
 }); 
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
